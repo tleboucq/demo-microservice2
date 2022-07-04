@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 80;
-app.get('microservice2', (req, res) => {
+
+app.get('/microservice2/', (req, res) => {
+    console.log(req);
     res.send('<h1>microservice2!</h1>');
 });
 app.listen(port, () => {
