@@ -6,6 +6,30 @@ app.get('/', (req, res) => {
     console.log(req.url);
     res.send('<h1>microservice2!</h1>');
 });
+
+
+app.get('/v2', (req, res) => {
+    console.log(req.url);
+    res.send('<h1>microservicev2!</h1>');
+});
+
+app.get('v2', (req, res) => {
+    console.log(req.url);
+    res.send('<h1>microserviceV2!</h1>');
+});
+
+
+app.get('/microservicev2', (req, res) => {
+    console.log(req.url);
+    res.send('<h1>microservicex2!</h1>');
+});
+
+app.get('microservicev2', (req, res) => {
+    console.log(req.url);
+    res.send('<h1>microserviceX2!</h1>');
+});
+
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
