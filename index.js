@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/v2', (req, res) => {
     console.log(req.url);
-    res.send('<h1>microservicev2!</h1>');
+    res.send('<h1>microservicev22!</h1>');
 });
 
 app.get('v2', (req, res) => {
