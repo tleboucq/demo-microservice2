@@ -9,7 +9,7 @@ steps:
 # Step 1
 #push the previously built image to ythe docker repo created in Step 0
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/microservices/microservices2']
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/microservices/microservice2']
 
 
 # Step 2
