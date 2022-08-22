@@ -1,14 +1,16 @@
 const express = require('express');
 const app = express();
-const port = 80;
+const port = 8080;
 
 app.get('/', (req, res) => {
+    console.log("line6");
     console.log(req.url);
     res.send('<h1>microservice2!</h1>');
 });
 
 
 app.get('/v2', (req, res) => {
+    console.log("line13");
     console.log(req.url);
     res.send('<h1>microservicev22!</h1>');
 });
