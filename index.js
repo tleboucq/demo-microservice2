@@ -8,6 +8,12 @@ app.get('/', (req, res) => {
     res.send('<h1>microservice2!</h1>');
 });
 
+app.get('/microservice2', (req, res) => {
+    console.log("line12");
+    console.log(req.url);
+    res.send('<h1>microservice2r!</h1>');
+});
+
 
 app.get('/v2', (req, res) => {
     console.log("line13");
