@@ -9,12 +9,14 @@ spec:
   - http:
       paths:
       - path: /microservice1
+        pathType: ImplementationSpecific
         backend:
           service:
             name: microservice1
             port:
               number: 8080
       - path: /microservice2
+        pathType: ImplementationSpecific
         backend:
           service:
             name: microservice2
