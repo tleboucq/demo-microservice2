@@ -8,7 +8,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /microservice1/*
+      - path: /microservice1
         pathType: Exact
         backend:
           service:
